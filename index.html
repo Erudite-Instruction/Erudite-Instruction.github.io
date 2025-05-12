@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infinite Learning - Tutoring Center Platform</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="logo">
+        <h1>Infinite Learning</h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Pilot Program</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="demo.html" class="cta-button">Try Demo</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1>Transform Your Tutoring Center with Digital Innovation</h1>
+        <p>Our comprehensive learning management system helps tutoring centers provide exceptional education experiences with powerful digital tools for students, tutors, and administrators.</p>
+        <div class="hero-buttons">
+          <a href="demo.html" class="button primary-button">Try Demo</a>
+          <a href="#features" class="button secondary-button">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-dashboard.svg" alt="Platform Dashboard" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Powerful Features for Every Role</h2>
+        <p>Our platform provides specialized tools for students, tutors, and administrators</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <h3>Unlimited Learning Resources</h3>
+          <p>Access a vast library of practice materials, lessons, and assessments across all academic subjects.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Advanced Progress Tracking</h3>
+          <p>Monitor student progress with detailed analytics and personalized performance reports.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <h3>Customized Assignments</h3>
+          <p>Create tailored practice sets and assignments based on individual student needs.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Streamlined Management</h3>
+          <p>Efficiently manage students, tutors, and resources from a central administrator dashboard.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Accessible Everywhere</h3>
+          <p>Access your learning portal from any device with our responsive design and cross-platform support.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Adaptive Learning</h3>
+          <p>Our system adapts to each student's learning patterns to provide personalized educational experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interface Showcase -->
+  <section class="interface-showcase">
+    <div class="container">
+      <div class="section-header center">
+        <h2>One Platform, Three Powerful Interfaces</h2>
+        <p>Each role has a dedicated, purpose-built interface</p>
+      </div>
+
+      <div class="tabs-container">
+        <div class="tabs">
+          <button class="tab-button active" data-tab="student">Student Experience</button>
+          <button class="tab-button" data-tab="tutor">Tutor Dashboard</button>
+          <button class="tab-button" data-tab="admin">Admin Control Panel</button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="student-tab">
+            <div class="interface-info">
+              <h3>Student Learning Portal</h3>
+              <ul>
+                <li><i class="fas fa-check"></i> Interactive practice exercises</li>
+                <li><i class="fas fa-check"></i> Performance tracking and analytics</li>
+                <li><i class="fas fa-check"></i> Scheduled assignments and deadlines</li>
+                <li><i class="fas fa-check"></i> Instant feedback on practice tests</li>
+                <li><i class="fas fa-check"></i> Personalized study recommendations</li>
+              </ul>
+              <a href="demo.html?role=student" class="button primary-button">Try Student Demo</a>
+            </div>
+            <div class="interface-image">
+              <img src="images/student-interface.svg" alt="Student Interface" />
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tutor-tab">
+            <div class="interface-info">
+              <h3>Tutor Management System</h3>
+              <ul>
+                <li><i class="fas fa-check"></i> Student progress monitoring</li>
+                <li><i class="fas fa-check"></i> Custom practice set creation</li>
+                <li><i class="fas fa-check"></i> Assignment management</li>
+                <li><i class="fas fa-check"></i> Detailed performance analytics</li>
+                <li><i class="fas fa-check"></i> Topic mastery tracking</li>
+              </ul>
+              <a href="demo.html?role=tutor" class="button primary-button">Try Tutor Demo</a>
+            </div>
+            <div class="interface-image">
+              <img src="images/tutor-interface.svg" alt="Tutor Interface" />
+            </div>
+          </div>
+
+          <div class="tab-pane" id="admin-tab">
+            <div class="interface-info">
+              <h3>Administrator Control Center</h3>
+              <ul>
+                <li><i class="fas fa-check"></i> Complete tutoring center management</li>
+                <li><i class="fas fa-check"></i> Student and tutor oversight</li>
+                <li><i class="fas fa-check"></i> Center-wide analytics</li>
+                <li><i class="fas fa-check"></i> Resource allocation</li>
+                <li><i class="fas fa-check"></i> Customizable reporting</li>
+              </ul>
+              <a href="demo.html?role=admin" class="button primary-button">Try Admin Demo</a>
+            </div>
+            <div class="interface-image">
+              <img src="images/admin-interface.svg" alt="Admin Interface" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Pilot Program Section -->
+  <section id="pricing" class="pilot-program">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Join Our SAT/ACT Prep Pilot Program</h2>
+        <p>Limited spots available for tutoring centers ready to transform their test prep offerings</p>
+      </div>
+
+      <div class="pilot-content">
+        <div class="pilot-info">
+          <h3>Exclusive Early Access Benefits</h3>
+          <p>Be among the first tutoring centers to leverage our comprehensive SAT/ACT prep platform and shape its future development.</p>
+          
+          <div class="pilot-features">
+            <div class="pilot-feature">
+              <div class="feature-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Complete Tutor Toolkit</h4>
+                <p>Access our full suite of tutor management tools, including progress tracking, assignment creation, and detailed analytics.</p>
+              </div>
+            </div>
+
+            <div class="pilot-feature">
+              <div class="feature-icon">
+                <i class="fas fa-clipboard-check"></i>
+              </div>
+              <div class="feature-content">
+                <h4>10 Quality Diagnostic Tests</h4>
+                <p>Professionally developed, full-length SAT and ACT diagnostic tests that accurately simulate the actual exams.</p>
+              </div>
+            </div>
+
+            <div class="pilot-feature">
+              <div class="feature-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Extensive Question Bank</h4>
+                <p>Over 3,000+ questions for each exam, covering every topic and skill level to create personalized practice sets.</p>
+              </div>
+            </div>
+
+            <div class="pilot-feature">
+              <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Personalized Analytics</h4>
+                <p>Detailed performance insights that identify each student's strengths and weaknesses down to specific concepts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pilot-benefits">
+            <h4>Additional Pilot Partner Benefits:</h4>
+            <ul>
+              <li><i class="fas fa-check"></i> Priority feature requests and direct input on platform development</li>
+              <li><i class="fas fa-check"></i> Dedicated onboarding and support throughout the pilot period</li>
+              <li><i class="fas fa-check"></i> Special founding partner pricing when we launch officially</li>
+              <li><i class="fas fa-check"></i> Early access to new content and features</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pilot-cta">
+          <div class="pilot-card">
+            <div class="pilot-card-header">
+              <h3>Limited Time Offer</h3>
+              <p class="pilot-period">3-Month Pilot Program</p>
+              <div class="pilot-price">Free</div>
+              <p class="pilot-note">For selected tutoring centers</p>
+            </div>
+            <div class="pilot-card-body">
+              <p>The pilot program is designed for tutoring centers serious about elevating their test prep services. We're selecting partners who will actively use the platform and provide valuable feedback.</p>
+              <div class="pilot-spots">
+                <span class="spots-label">Available Spots:</span>
+                <span class="spots-value">7 remaining</span>
+              </div>
+              <a href="#contact" class="button primary-button">Apply for the Pilot</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about our platform</p>
+      </div>
+
+      <div class="faq-container">
+        <details class="faq-item">
+          <summary>Is the pilot really free?</summary>
+          <div class="faq-content">
+            <p>Yes—no credit card required. We simply ask for candid feedback to help us improve the platform.</p>
+          </div>
+        </details>
+        
+        <details class="faq-item">
+          <summary>Which tests are covered today?</summary>
+          <div class="faq-content">
+            <p>Digital SAT English &amp; Math, with ACT following this summer. We're also planning to add AP exam content in the near future.</p>
+          </div>
+        </details>
+        
+        <details class="faq-item">
+          <summary>How many tutors and students can I add during the pilot?</summary>
+          <div class="faq-content">
+            <p>During the pilot, you can add up to 5 tutors and 50 students to fully test the platform's capabilities.</p>
+          </div>
+        </details>
+        
+        <details class="faq-item">
+          <summary>Do you provide training for our tutors?</summary>
+          <div class="faq-content">
+            <p>Absolutely! We offer comprehensive onboarding sessions and ongoing support to ensure your team can maximize the platform's benefits.</p>
+          </div>
+        </details>
+        
+        <details class="faq-item">
+          <summary>What happens after the pilot period?</summary>
+          <div class="faq-content">
+            <p>Pilot partners will receive priority access to our paid plans at special founding member pricing.</p>
+          </div>
+        </details>
+        
+        <details class="faq-item">
+          <summary>Is the platform compatible with our existing systems?</summary>
+          <div class="faq-content">
+            <p>Our platform is designed as a standalone solution, but we offer data export options that work with most common tutoring management systems.</p>
+          </div>
+        </details>
+        
+        <details class="faq-item">
+          <summary>How secure is student data on your platform?</summary>
+          <div class="faq-content">
+            <p>We take data security extremely seriously. All data is encrypted, and we're fully FERPA compliant. We never share or sell student information.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header center">
+        <h2>Apply for the SAT/ACT Prep Pilot Program</h2>
+        <p>Complete the form below to join our exclusive pilot for tutoring centers</p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Pilot Program Details</h3>
+          <p><i class="fas fa-calendar"></i> 3-month program duration</p>
+          <p><i class="fas fa-users"></i> Limited to 15 tutoring centers</p>
+          <p><i class="fas fa-unlock"></i> Full platform access</p>
+          <p><i class="fas fa-headset"></i> Dedicated support team</p>
+          
+          <div class="contact-note">
+            <p>Have questions before applying?</p>
+            <p><i class="fas fa-envelope"></i> pilot@infinitelearning.com</p>
+            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+          </div>
+          
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Pilot Application</h3>
+          <form>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="company">Tutoring Center Name</label>
+              <input type="text" id="company" name="company" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="position">Your Position</label>
+              <select id="position" name="position" required>
+                <option value="">Select your position</option>
+                <option value="owner">Owner/Founder</option>
+                <option value="director">Director</option>
+                <option value="manager">Manager</option>
+                <option value="tutor">Head Tutor</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="center-size">Center Size</label>
+              <select id="center-size" name="center-size" required>
+                <option value="">Select center size</option>
+                <option value="small">Small (1-5 tutors)</option>
+                <option value="medium">Medium (6-15 tutors)</option>
+                <option value="large">Large (16-30 tutors)</option>
+                <option value="enterprise">Enterprise (31+ tutors)</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label>Current Test Prep Offerings</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="offerings" value="sat"> SAT</label>
+                <label><input type="checkbox" name="offerings" value="act"> ACT</label>
+                <label><input type="checkbox" name="offerings" value="ap"> AP Exams</label>
+                <label><input type="checkbox" name="offerings" value="other"> Other</label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Why are you interested in our pilot program?</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="button primary-button">Submit Application</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Infinite Learning</h2>
+          <p>Transforming tutoring centers with digital innovation</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Platform</h3>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pilot Program</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Updates</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Webinars</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 Infinite Learning. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include JavaScript Files -->
+  <script src="scripts.js"></script>
+</body>
+</html> 
